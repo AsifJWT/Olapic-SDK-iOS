@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Olapic-SDK-iOS"
-  s.version      = "2.0.3"
+  s.version      = "2.0.4"
   s.summary      = "The SDK makes it easier for iOS developers to build applications."
 
   s.description  = <<-DESC
@@ -80,10 +80,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "dist/OlapicSDK.framework/**/*.h"
-  s.exclude_files = "Classes/Exclude"
-
-  # s.public_header_files = "Classes/**/*.h"
+  s.vendored_frameworks = "dist/OlapicSDK.framework"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
